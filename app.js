@@ -39,5 +39,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// module.exports = app;
-module.exports.handler = serverless(app);
+// module.exports = app;   // Use this line to for running/debugging on local
+module.exports.handler = serverless(app); // Use this line to deploy to AWS lambda
